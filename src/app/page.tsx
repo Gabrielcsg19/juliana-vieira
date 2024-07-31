@@ -1,95 +1,60 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import { Box, Center, HStack, Text, VStack } from '@chakra-ui/react';
+
+import LogoSvg from '@/assets/images/logo.svg';
+import WhatsappSvg from '@/assets/images/whatsapp.svg';
+import EmailSvg from '@/assets/images/e-mail.svg';
+import InstagramSvg from '@/assets/images/instagram.svg';
+import LinkedinSvg from '@/assets/images/linkedIn.svg';
+import PhotoHomePng from '@/assets/images/photo-home.svg';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <VStack>
+      <VStack
+        align="stretch"
+        pt={14}
+        height="100vh"
+        position="relative"
+        justify="space-between"
+      >
+        <VStack mb={8}>
+          <Image src={LogoSvg} alt="Logo Juliana Vieira" />
+          <Text fontWeight="bold" fontSize={42} lineHeight="none" mt={7}>
+            Juliana Vieira
+          </Text>
+          <Text
+            fontStyle="italic"
+            fontWeight="light"
+            fontSize={22}
+            lineHeight="none"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+            Perita Judicial Trabalhista
+          </Text>
+        </VStack>
+        <Center>
+          <Image src={PhotoHomePng} alt="Foto Juliana Vieira" />
+        </Center>
+        <HStack
+          justify="space-between"
+          position="absolute"
+          bottom={20}
+          w="100%"
+          zIndex={1}
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <Image src={WhatsappSvg} alt="Ícone Whatsapp" />
+          <Image src={EmailSvg} alt="Ícone Email" />
+          <Image src={InstagramSvg} alt="Ícone Instagram" />
+          <Image src={LinkedinSvg} alt="Ícone Linkedin" />
+        </HStack>
+      </VStack>
+      <Box
+        height={300}
+        width="100%"
+        bottom={0}
+        bgGradient="linear(to-t, rgba(0,0,0,0.9), transparent 80%)"
+        position="absolute"
+      />
+    </VStack>
   );
 }
