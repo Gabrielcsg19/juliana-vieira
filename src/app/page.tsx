@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Box, Center, HStack, Text, VStack } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
 
 import LogoSvg from '@/assets/images/logo.svg';
 import WhatsappSvg from '@/assets/images/whatsapp.svg';
@@ -10,8 +11,9 @@ import PhotoHomePng from '@/assets/images/photo-home.svg';
 
 export default function Home() {
   return (
-    <VStack>
+    <VStack as="main">
       <VStack
+        as="section"
         align="stretch"
         pt={14}
         height="100vh"
@@ -20,7 +22,13 @@ export default function Home() {
       >
         <VStack mb={8}>
           <Image src={LogoSvg} alt="Logo Juliana Vieira" />
-          <Text fontWeight="bold" fontSize={42} lineHeight="none" mt={7}>
+          <Text
+            fontWeight="bold"
+            fontSize={42}
+            lineHeight="none"
+            mt={7}
+            as="h1"
+          >
             Juliana Vieira
           </Text>
           <Text
@@ -28,6 +36,7 @@ export default function Home() {
             fontWeight="light"
             fontSize={22}
             lineHeight="none"
+            as="h2"
           >
             Perita Judicial Trabalhista
           </Text>
@@ -39,13 +48,22 @@ export default function Home() {
           justify="space-between"
           position="absolute"
           bottom={20}
+          as="nav"
           w="100%"
           zIndex={1}
         >
-          <Image src={WhatsappSvg} alt="Ícone Whatsapp" />
-          <Image src={EmailSvg} alt="Ícone Email" />
-          <Image src={InstagramSvg} alt="Ícone Instagram" />
-          <Image src={LinkedinSvg} alt="Ícone Linkedin" />
+          <Link href="https://instagram.com" isExternal>
+            <Image src={WhatsappSvg} alt="Ícone Whatsapp" />
+          </Link>
+          <Link href="https://instagram.com" isExternal>
+            <Image src={EmailSvg} alt="Ícone Email" />
+          </Link>
+          <Link href="https://instagram.com" isExternal>
+            <Image src={InstagramSvg} alt="Ícone Instagram" />
+          </Link>
+          <Link href="https://instagram.com" isExternal>
+            <Image src={LinkedinSvg} alt="Ícone Linkedin" />
+          </Link>
         </HStack>
       </VStack>
       <Box
