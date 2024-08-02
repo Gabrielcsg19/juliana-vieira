@@ -103,7 +103,7 @@ export function ServiceSection() {
         </VStack>
         <Link
           _hover={{ textDecoration: 'none' }}
-          href="https://instagram.com"
+          href="https://wa.me/5548999454784?text="
           isExternal
           display="block"
         >

@@ -52,7 +52,7 @@ export function HomeSection() {
           right={6}
           zIndex={1}
         >
-          <Link href="https://instagram.com" isExternal>
+          <Link href="https://wa.me/5548999454784?text=" isExternal>
             <Image
               src={WhatsappSvg}
               alt="Ícone Whatsapp"
@@ -61,7 +61,7 @@ export function HomeSection() {
               }}
             />
           </Link>
-          <Link href="https://instagram.com" isExternal>
+          <Link href="mailto:peritajulianavieira@gmail.com" isExternal>
             <Image
               src={EmailSvg}
               alt="Ícone Email"
@@ -70,7 +70,7 @@ export function HomeSection() {
               }}
             />
           </Link>
-          <Link href="https://instagram.com" isExternal>
+          <Link href="https://www.instagram.com/peritajulianavieira" isExternal>
             <Image
               src={InstagramSvg}
               alt="Ícone Instagram"
@@ -79,7 +79,10 @@ export function HomeSection() {
               }}
             />
           </Link>
-          <Link href="https://instagram.com" isExternal>
+          <Link
+            href="https://www.linkedin.com/in/juliana-vieira-779621319"
+            isExternal
+          >
             <Image
               src={LinkedinSvg}
               alt="Ícone Linkedin"
