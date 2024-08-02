@@ -53,16 +53,40 @@ export function HomeSection() {
           zIndex={1}
         >
           <Link href="https://instagram.com" isExternal>
-            <Image src={WhatsappSvg} alt="Ícone Whatsapp" />
+            <Image
+              src={WhatsappSvg}
+              alt="Ícone Whatsapp"
+              style={{
+                filter: 'drop-shadow(0 0 3px #0A0A0A)',
+              }}
+            />
           </Link>
           <Link href="https://instagram.com" isExternal>
-            <Image src={EmailSvg} alt="Ícone Email" />
+            <Image
+              src={EmailSvg}
+              alt="Ícone Email"
+              style={{
+                filter: 'drop-shadow(0 0 3px #0A0A0A)',
+              }}
+            />
           </Link>
           <Link href="https://instagram.com" isExternal>
-            <Image src={InstagramSvg} alt="Ícone Instagram" />
+            <Image
+              src={InstagramSvg}
+              alt="Ícone Instagram"
+              style={{
+                filter: 'drop-shadow(0 0 3px #0A0A0A)',
+              }}
+            />
           </Link>
           <Link href="https://instagram.com" isExternal>
-            <Image src={LinkedinSvg} alt="Ícone Linkedin" />
+            <Image
+              src={LinkedinSvg}
+              alt="Ícone Linkedin"
+              style={{
+                filter: 'drop-shadow(0 0 3px #0A0A0A)',
+              }}
+            />
           </Link>
         </HStack>
       </Container>
