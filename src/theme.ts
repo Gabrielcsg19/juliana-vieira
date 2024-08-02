@@ -22,6 +22,7 @@ export const theme = extendTheme({
       body: {
         bg: 'gray.900',
         color: 'gray.100',
+        overflowX: 'hidden',
       },
     },
   },
