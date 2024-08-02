@@ -20,7 +20,7 @@ export function HomeSection() {
               fontWeight="bold"
               fontSize={48}
               lineHeight="none"
-              mt={12}
+              mt={6}
               as="h1"
             >
               Juliana Vieira
@@ -37,7 +37,7 @@ export function HomeSection() {
           </VStack>
           <Center>
             <Image
-              style={{ height: '60vh' }}
+              style={{ height: '65vh' }}
               src={PhotoHomePng}
               alt="Foto Juliana Vieira"
             />

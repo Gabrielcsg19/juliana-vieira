@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={fonts.roboto.variable}>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
         <Providers>{children}</Providers>
       </body>
