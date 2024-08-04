@@ -12,7 +12,7 @@ import {
 
 import ArrowRightSvg from '@/assets/images/arrow-right.svg';
 import WhatsappButtonSvg from '@/assets/images/whatsapp-button.svg';
-import PhotoServicesSvg from '@/assets/images/photo-services.svg';
+import PhotoServicesPng from '@/assets/images/photo-services.png';
 
 export function ServiceSection() {
   return (
@@ -27,11 +27,12 @@ export function ServiceSection() {
       >
         <Flex justify="space-between" gap={24}>
           <Image
-            src={PhotoServicesSvg}
+            src={PhotoServicesPng}
             alt="Foto Juliana Vieira"
             display={{ base: 'none', lg: 'block' }}
             alignSelf="flex-end"
             maxH="570px"
+            w="auto"
           />
           <Box w="full" mb={10}>
             <Text

@@ -1,7 +1,7 @@
-import { Box, Center, Container, Flex, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Text, VStack } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/next-js';
 
-import PhotoAboutSvg from '@/assets/images/photo-about.svg';
+import PhotoAboutPng from '@/assets/images/photo-about.png';
 
 export function AboutSection() {
   return (
@@ -49,7 +49,12 @@ export function AboutSection() {
             </Text>
           </Box>
           <Flex flex={1} justify="flex-end" align="flex-end">
-            <Image src={PhotoAboutSvg} alt="Foto Juliana Vieira" />
+            <Image
+              src={PhotoAboutPng}
+              maxW="318px"
+              h="auto"
+              alt="Foto Juliana Vieira"
+            />
           </Flex>
         </Flex>
       </Container>

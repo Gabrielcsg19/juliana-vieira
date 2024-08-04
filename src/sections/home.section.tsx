@@ -15,8 +15,8 @@ import WhatsappSvg from '@/assets/images/whatsapp.svg';
 import EmailSvg from '@/assets/images/e-mail.svg';
 import InstagramSvg from '@/assets/images/instagram.svg';
 import LinkedinSvg from '@/assets/images/linkedIn.svg';
-import PhotoHomePng from '@/assets/images/photo-home.svg';
 import LogoFullSvg from '@/assets/images/logo-full.svg';
+import PhotoHomePng from '@/assets/images/photo-home.png';
 
 export function HomeSection() {
   return (
@@ -30,21 +30,20 @@ export function HomeSection() {
           '2xl': 'container.xl',
         }}
       >
+        <Image
+          src={LogoFullSvg}
+          alt="Logo completo Juliana Vieira"
+          position="absolute"
+          top={14}
+          display={{ base: 'none', lg: 'block' }}
+        />
         <Flex
-          align="stretch"
           pt={14}
           minH="100vh"
           justify="space-between"
           direction={{ base: 'column', lg: 'row' }}
-          alignItems={{ base: 'center', lg: 'center' }}
+          align="center"
         >
-          <Image
-            src={LogoFullSvg}
-            alt="Logo completo Juliana Vieira"
-            position="absolute"
-            top={14}
-            display={{ base: 'none', lg: 'block' }}
-          />
           <VStack
             mb={{ base: 8, lg: 0 }}
             borderRight={{
@@ -79,10 +78,10 @@ export function HomeSection() {
             </Text>
           </VStack>
           <Image
-            priority
-            h={{ base: '65vh', lg: 'auto' }}
-            maxW={{ base: 'auto', lg: '60vh' }}
+            maxH={{ base: '65vh', lg: '80vh' }}
+            w="auto"
             alignSelf={{ base: 'auto', lg: 'flex-end' }}
+            priority
             src={PhotoHomePng}
             alt="Foto Juliana Vieira"
           />
@@ -132,7 +131,7 @@ export function HomeSection() {
       </Container>
       <Box
         display={{ base: 'block', lg: 'none' }}
-        height={300}
+        h="300px"
         w="100vw"
         bottom={0}
         bgGradient="linear(to-t, #00000090, transparent 80%)"
