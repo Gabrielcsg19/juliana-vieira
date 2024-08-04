@@ -1,4 +1,12 @@
-import { Box, Container, HStack, Text, VStack, Link } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  HStack,
+  Text,
+  VStack,
+  Link,
+  Flex,
+} from '@chakra-ui/react';
 import { Image } from '@chakra-ui/next-js';
 
 import { customTheme } from '@/theme';
@@ -16,14 +24,14 @@ export function HomeSection() {
       <Container
         pos="relative"
         px={6}
-        maxW={{ base: 'container.sm', lg: 'container.xl' }}
+        maxW={{ base: 'container.sm', lg: 'container.lg', xl: 'container.xl' }}
       >
-        <VStack
+        <Flex
           align="stretch"
           pt={14}
-          height="100vh"
+          minH="100vh"
           justify="space-between"
-          flexDirection={{ base: 'column', lg: 'row' }}
+          direction={{ base: 'column', lg: 'row' }}
           alignItems={{ base: 'center', lg: 'center' }}
         >
           <Image
@@ -69,11 +77,12 @@ export function HomeSection() {
           <Image
             priority
             h={{ base: '65vh', lg: 'auto' }}
+            maxW={{ base: 'auto', lg: '60vh' }}
             alignSelf={{ base: 'auto', lg: 'flex-end' }}
             src={PhotoHomePng}
             alt="Foto Juliana Vieira"
           />
-        </VStack>
+        </Flex>
         <HStack
           justify={{ base: 'space-between', lg: 'flex-start' }}
           position="absolute"

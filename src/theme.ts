@@ -19,6 +19,10 @@ export const customTheme = {
   },
   styles: {
     global: {
+      html: {
+        scrollbarWidth: 'thin',
+        scrollbarColor: '#8979B6 #0A0A0A',
+      },
       body: {
         bg: 'gray.900',
         color: 'gray.100',
