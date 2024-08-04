@@ -34,7 +34,12 @@ export function ServiceSection() {
             maxH="570px"
           />
           <Box w="full" mb={10}>
-            <Text as="h1" fontWeight="bold" fontSize="4xl" lineHeight="none">
+            <Text
+              as="h1"
+              fontWeight="bold"
+              fontSize={{ base: '4xl', lg: '5xl' }}
+              lineHeight="none"
+            >
               Serviços
             </Text>
             <Box h="2px" mt={4} mb={10} bgColor="purple.400" w="60px" />
