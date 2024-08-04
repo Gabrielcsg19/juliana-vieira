@@ -3,7 +3,7 @@ import { Providers } from './providers';
 import { fonts } from './fonts';
 
 export const metadata: Metadata = {
-  title: 'Juliana Vieira',
+  title: 'Juliana Vieira | Perita Judicial Trabalhista',
   description: 'Perita Judicial Trabalhista',
 };
 

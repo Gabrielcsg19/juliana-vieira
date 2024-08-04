@@ -74,15 +74,17 @@ export function ContactSection() {
       <Box bgColor="gray.800" as="footer" color="gray.400">
         <Container px={6} py={5}>
           <HStack justify="space-between">
-            <Text>{new Date().getFullYear()}</Text>
+            <Text fontSize={{ base: 'sm', lg: 'md' }}>
+              {new Date().getFullYear()}
+            </Text>
             <Text as="span" fontSize={8}>
               ●
             </Text>
-            <Text>JULIANA VIEIRA</Text>
+            <Text fontSize={{ base: 'sm', lg: 'md' }}>JULIANA VIEIRA</Text>
             <Text as="span" fontSize={8}>
               ●
             </Text>
-            <Text>CRC SC-040343/O-6</Text>
+            <Text fontSize={{ base: 'sm', lg: 'md' }}>CRC SC-040343/O-6</Text>
           </HStack>
         </Container>
       </Box>

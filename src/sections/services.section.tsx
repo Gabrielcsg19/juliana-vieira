@@ -19,7 +19,11 @@ export function ServiceSection() {
     <VStack as="section" align="start" pt={10} bgColor="gray.800">
       <Container
         px={6}
-        maxW={{ base: 'container.sm', lg: 'container.lg', xl: 'container.xl' }}
+        maxW={{
+          base: 'container.sm',
+          lg: 'container.lg',
+          '2xl': 'container.xl',
+        }}
       >
         <Flex justify="space-between" gap={24}>
           <Image

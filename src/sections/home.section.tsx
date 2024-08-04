@@ -24,7 +24,11 @@ export function HomeSection() {
       <Container
         pos="relative"
         px={6}
-        maxW={{ base: 'container.sm', lg: 'container.lg', xl: 'container.xl' }}
+        maxW={{
+          base: 'container.sm',
+          lg: 'container.lg',
+          '2xl': 'container.xl',
+        }}
       >
         <Flex
           align="stretch"
