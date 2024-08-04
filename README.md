@@ -2,5 +2,5 @@
 
 - [x] Adaptar para computador
 - [x] Melhorar carregamento das imagens
-- [ ] Subir para Vercel
-- [ ] Adicionar domínio próprio
+- [x] Subir para Vercel
+- [x] Adicionar domínio próprio
