@@ -1,3 +1,4 @@
+'use client';
 import { Flex } from '@chakra-ui/react';
 
 import { HomeSection } from '@/sections/home.section';

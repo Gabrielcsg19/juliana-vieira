@@ -1,11 +1,11 @@
 import { Box, Center, Container, HStack, Text, VStack } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Image } from '@chakra-ui/next-js';
 
 import WhatsappSvg from '@/assets/images/whatsapp.svg';
 import EmailSvg from '@/assets/images/e-mail.svg';
 import InstagramSvg from '@/assets/images/instagram.svg';
 import LinkedinSvg from '@/assets/images/linkedIn.svg';
-import LogoFooterSvg from '@/assets/images/logo-footer.svg';
+import LogoFullSvg from '@/assets/images/logo-full.svg';
 
 export function ContactSection() {
   return (
@@ -66,7 +66,7 @@ export function ContactSection() {
             </HStack>
           </VStack>
           <Center mt={12} mb={10}>
-            <Image src={LogoFooterSvg} alt="Logo Juliana Vieira" />
+            <Image src={LogoFullSvg} alt="Logo completo Juliana Vieira" />
           </Center>
         </Container>
       </VStack>

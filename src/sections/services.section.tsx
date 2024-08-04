@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from '@chakra-ui/next-js';
 import {
   Box,
   Button,
@@ -108,7 +108,7 @@ export function ServiceSection() {
           display="block"
         >
           <Button
-            leftIcon={<Image src={WhatsappButtonSvg} alt="Seta para direita" />}
+            leftIcon={<Image src={WhatsappButtonSvg} alt="Ícone do Whatsapp" />}
             fontWeight="bold"
             fontSize="sm"
             borderRadius="lg"
@@ -118,7 +118,7 @@ export function ServiceSection() {
             _active={{
               bg: 'gray.900',
             }}
-            w="100%"
+            w="full"
             color="purple.400"
             boxShadow="md"
           >

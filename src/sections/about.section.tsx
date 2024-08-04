@@ -1,5 +1,5 @@
-import { Box, Center, Container, Flex, Text, VStack } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Box, Center, Container, Text, VStack } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/next-js';
 
 import PhotoAboutSvg from '@/assets/images/photo-about.svg';
 

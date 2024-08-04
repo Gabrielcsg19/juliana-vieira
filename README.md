@@ -1,7 +1,6 @@
 # Pendências
 
-- [ ] Melhorar carregamento das imagens
-- [ ] Adaptar para tablet
 - [ ] Adaptar para computador
+- [ ] Melhorar carregamento das imagens
 - [ ] Subir para Vercel
 - [ ] Adicionar domínio próprio

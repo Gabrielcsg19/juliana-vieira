@@ -1,6 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 
-export const theme = extendTheme({
+export const customTheme = {
   fonts: {
     heading: 'var(--font-roboto)',
     body: 'var(--font-roboto)',
@@ -26,4 +26,6 @@ export const theme = extendTheme({
       },
     },
   },
-});
+};
+
+export const theme = extendTheme(customTheme);
