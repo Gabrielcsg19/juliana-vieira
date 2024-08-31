@@ -1,1 +1,2 @@
-![localhost_3000_](https://github.com/user-attachments/assets/6c3cb41c-b610-4409-965f-eb84e8fc7e1d)
+![Juliana Vieira](https://raw.githubusercontent.com/Gabrielcsg19/juliana-vieira/main/assets/cover-img.png)
+
